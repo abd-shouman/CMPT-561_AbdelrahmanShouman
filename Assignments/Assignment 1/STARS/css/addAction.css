@@ -1,0 +1,12 @@
+.container{
+    margin-top: 1%;
+}
+
+.selectedStudents{
+    margin-top: 5%;
+}
+
+.actionForm{
+    margin-top: 5%;
+    @extend red lighten-2;
+}

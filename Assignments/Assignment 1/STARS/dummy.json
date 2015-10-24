@@ -1,0 +1,7 @@
+[{"First_Name":"Abdelrahman","Last_Name":"Shouman","Gender":"Male","Program":"AUB","GPA":3,"Course":"AU101","Semester":"Spring 2022","AtRiskCategory":"Probation1"},
+  {"First_Name":"Jean","Last_Name":"Sammet","Gender":"Female","Program":"CHE","GPA":3.2,"Course":"CH101","Semester":"Spring 2022","AtRiskCategory":"Probation2"},
+  {"First_Name":"Mohannad","Last_Name":"Abounada","Gender":"Male","Program":"CVE","GPA":2.2,"Course":"CV101","Semester":"Spring 2022","AtRiskCategory":"Probation3-Final"},
+  {"First_Name":"Husam","Last_Name":"Jawahri","Gender":"Male","Program":"CS","GPA":2,"Course":"CS101","Semester":"Spring 2021","AtRiskCategory":"Reinstated"},
+  {"First_Name":"Khalid","Last_Name":"Nabil","Gender":"Male","Program":"CE","GPA":2.9,"Course":"CE101","Semester":"Spring 2021","AtRiskCategory":"FailedTwice"},
+  {"First_Name":"Sophie","Last_Name":"Wilson","Gender":"Female","Program":"ME","GPA":1.9,"Course":"ME101","Semester":"Spring 2022","AtRiskCategory":"LastTermandGPA < 2.0"},
+  {"First_Name":"xen","Last_Name":"zor","Gender":"Female","Program":"CS","GPA":2,"Course":"CS201","Semester":"Spring 2021","AtRiskCategory":"Reinstated"}]

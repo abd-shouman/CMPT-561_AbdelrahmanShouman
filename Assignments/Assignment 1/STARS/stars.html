@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">-->
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="css/stars.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css">
+
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>-->
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/stars.js"></script>
+</head>
+<body>
+
+
+    <div class="container">
+       <nav>
+           <div class="nav-wrapper">
+               <ul id="nav-mobile" class="left hide-on-med-and-down">
+                   <li><a href="./stars.html">Star Students</a></li>
+                   <li><a href="./actions.html">Actions</a></li>
+               </ul>
+           </div>
+       </nav>
+
+       <div  id="data">
+           <div id="addaction">
+            <a href="./addaction.html" class="waves-effect waves-teal btn secondary-content">ADD ACTION</a>
+           </div>
+
+           <table id="studnets" class="highlight">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Gender</th>
+                        <th>Program</th>
+                        <th>GPA</th>
+                        <th>Course</th>
+                        <th>Semester</th>
+                        <th>At Risk Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <tr id="0" role="row">
+                    <td>
+                        <input type="checkbox" class="filled-in" id="filled-in-box0" />
+                        <label for="filled-in-box0">Filled in</label>
+                    </td>
+                    <td class="userInfo">Abdelrahman</td>
+                    <td class="userInfo">Shouman</td>
+                    <td class="userInfo">Male</td>
+                    <td class="userInfo">AUB</td>
+                    <td class="userInfo">3</td>
+                    <td class="userInfo">AU101</td>
+                    <td class="userInfo">Spring 2022</td>
+                    <td class="userInfo">Probation1</td>
+                </tr>
+                <span role="row">
+                    <td id="action0" class="actionForm" colspan="8" style="display: none;">
+
+                        <!--Title Input-->
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="title" type="text" class="validate" placeholder="Enter your title here">
+                                <label class="active" for="title">Title</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <select>
+                                    <option value="CH101" disabled selected>AU101</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--Title Input-->
+
+                        <!--Action Type-->
+                        <div class="input-field col s6">
+                            <select>
+                                    <option value="" disabled selected>Choose an action</option>
+                                    <option value="1">Meeting</option>
+                                    <option value="2">Referral</option>
+                                    <option value="3">Email</option>
+                                    <option value="4">Letter</option>
+                            </select>
+                            <label>Action Type</label>
+                        </div>
+                        <!--Action Type-->
+
+                        <!--Desciption-->
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Textarea</label>
+                            </div>
+                        </div>
+                        <!--Desciption-->
+
+                        <!-- Date -->
+                        <input type="date" class="datepicker">
+                        <!-- Date -->
+
+                        <!-- File Input-->
+                        <div class="file-field input-field">
+                            <div class="btn">
+                                <span>File</span>
+                                <input type="file" multiple>
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                            </div>
+                        </div>
+                        <!-- File Input-->
+
+                        <!-- Add Button -->
+                        <a class="btn-floating btn-large waves-effect waves-light teal lighten-2 secondary-content">
+                                <i class="material-icons">add</i>
+                        </a>
+                        <!-- Add Button -->
+
+                    </td>
+                </span>
+                <tr id="1" role="row">
+                    <td>
+                        <input type="checkbox" class="filled-in" id="filled-in-box1" />
+                        <label for="filled-in-box1">Filled in</label>
+                    </td>
+                    <td class="userInfo">Jean</td>
+                    <td class="userInfo">Sammet</td>
+                    <td class="userInfo">Female</td>
+                    <td class="userInfo">CHE</td>
+                    <td class="userInfo">3.2</td>
+                    <td class="userInfo">CH101</td>
+                    <td class="userInfo">Spring 2022</td>
+                    <td class="userInfo">Probation2</td>
+                </tr>
+                <span role="row">
+                    <td id="action1" class="actionForm" colspan="8" style="display: none;">
+
+                        <!--Title Input-->
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="title" type="text" class="validate" placeholder="Enter your title here">
+                                <label class="active" for="title">Title</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <select>
+                                    <option value="CH101" disabled selected>CH101</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--Title Input-->
+
+                        <!--Action Type-->
+                        <div class="input-field col s6">
+                            <select>
+                                <option value="" disabled selected>Choose an action</option>
+                                <option value="1">Meeting</option>
+                                <option value="2">Referral</option>
+                                <option value="3">Email</option>
+                                <option value="4">Letter</option>
+                            </select>
+                            <label>Action Type</label>
+                        </div>
+                        <!--Action Type-->
+
+                        <!--Desciption-->
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Textarea</label>
+                            </div>
+                        </div>
+                        <!--Desciption-->
+
+                        <!-- Date -->
+                        <input type="date" class="datepicker">
+                        <!-- Date -->
+
+                        <!-- File Input-->
+                        <div class="file-field input-field">
+                            <div class="btn">
+                                <span>File</span>
+                                <input type="file" multiple>
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                            </div>
+                        </div>
+                        <!-- File Input-->
+
+                        <!-- Add Button -->
+                        <a class="btn-floating btn-large waves-effect waves-light teal lighten-2 secondary-content">
+                            <i class="material-icons">add</i>
+                        </a>
+                        <!-- Add Button -->
+
+                    </td>
+                </span>
+                <tr id="2" role="row">
+                    <td>
+                        <input type="checkbox" class="filled-in" id="filled-in-box2" />
+                        <label for="filled-in-box2">Filled in</label>
+                    </td>
+                    <td class="userInfo">Mohannad</td>
+                    <td class="userInfo">Abounada</td>
+                    <td class="userInfo">Male</td>
+                    <td class="userInfo">CVE</td>
+                    <td class="userInfo">2.2</td>
+                    <td class="userInfo">CV101</td>
+                    <td class="userInfo">Spring 2022</td>
+                    <td class="userInfo">Probation3-Final</td>
+                </tr>
+                <span role="row">
+                    <td id="action2" class="actionForm" colspan="8" style="display: none;">
+
+                        <!--Title Input-->
+                        <div class="row">
+                            <div class="input-field col s6">
+                                <input id="title" type="text" class="validate" placeholder="Enter your title here">
+                                <label class="active" for="title">Title</label>
+                            </div>
+                            <div class="input-field col s6">
+                                <select>
+                                    <option value="CH101" disabled selected>CV101</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!--Title Input-->
+
+                        <!--Action Type-->
+                        <div class="input-field col s6">
+                            <select>
+                                <option value="" disabled selected>Choose an action</option>
+                                <option value="1">Meeting</option>
+                                <option value="2">Referral</option>
+                                <option value="3">Email</option>
+                                <option value="4">Letter</option>
+                            </select>
+                            <label>Action Type</label>
+                        </div>
+                        <!--Action Type-->
+
+                        <!--Desciption-->
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                <label for="textarea1">Textarea</label>
+                            </div>
+                        </div>
+                        <!--Desciption-->
+
+                        <!-- Date -->
+                        <input type="date" class="datepicker">
+                        <!-- Date -->
+
+                        <!-- File Input-->
+                        <div class="file-field input-field">
+                            <div class="btn">
+                                <span>File</span>
+                                <input type="file" multiple>
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Upload one or more files">
+                            </div>
+                        </div>
+                        <!-- File Input-->
+
+                        <!-- Add Button -->
+                        <a class="btn-floating btn-large waves-effect waves-light teal lighten-2 secondary-content">
+                            <i class="material-icons">add</i>
+                        </a>
+                        <!-- Add Button -->
+
+                    </td>
+                </span>
+                <!--
+                <tr id="action0" role="row" class="even"><form></form><label>Browser Select</label><select class="browser-default"></select>	<option value="" disabled="" selected="">Choose your option</option><option value="1">Option 1</option><option value="2">Option 2</option><option value="3">Option 3</option><input type="date" class="datepicker"></tr>
+                -->
+
+                </tbody>
+            </table>
+       </div>
+
+    </div>
+</body>
+</html>
+
+
+<!--
+           <div class="followUpAction">
+               <form>
+                   <label>Browser Select</label>
+                   <select class="browser-default">
+                       <option value="" disabled selected>Choose your option</option>
+                       <option value="1">Option 1</option>
+                       <option value="2">Option 2</option>
+                       <option value="3">Option 3</option>
+                   </select>
+                   <input type="date" class="datepicker">
+               </form>
+           </div>
+           -->
+<!--<form>
+           <div class="input-field">
+               <input id="search" type="search" required>
+               <label for="search"><i class="material-icons">search</i></label>
+               <i class="material-icons">close</i>
+           </div>
+       </form>-->
+<!--
+       <div>
+           <select>
+               <option value="" disabled selected>Select your class</option>
+               <option value="Meeting">Meeting</option>
+               <option value="Referral">Referral</option>
+               <option value="Email">Email</option>
+               <option value="Letter">Letter</option>
+           </select>
+       </div>
+       -->

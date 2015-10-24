@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!--    <link rel="stylesheet" type="text/css" href="css/login.css">-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css">
+
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>-->
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/login.js"></script>
+</head>
+<body>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>User Login</h4>
+            <form class="col s12">
+                <div id="mail" class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">email</i>
+                        <input id="email" type="email" class="validate">
+                        <label for="email" data-error="wrong" data-success="right">Email</label>
+                    </div>
+                </div>
+                <div id="pass" class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">https</i>
+                        <input id="password" type="password" class="validate">
+                        <label for="password" data-error="wrong" data-success="right">Password</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <a href="./stars.html" class=" modal-action modal-close waves-effect waves-green btn-flat">Login</a>
+        </div>
+    </div>
+    <!-- End of Modal -->
+
+</body>
+</html>
