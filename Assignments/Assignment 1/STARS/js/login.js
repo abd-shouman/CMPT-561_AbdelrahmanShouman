@@ -6,8 +6,6 @@ $(document).ready(function() {
         dismissible: false,
         complete: function () {
             $('.container').show();
-            //state = $('#author').prop('checked');
-            //applyStateChanges(state,intTable);
         }
     });
 });
